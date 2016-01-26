@@ -2,6 +2,8 @@
 
 This module provides the [php-jobbers](https://github.com/devtransition/php-jobbers) integration for the [Yii framework 2.0](http://www.yiiframework.com).
 
+# !!!!!!!!!!!! NOT YET WORKING !!!!!!!!!!!!
+
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
@@ -42,10 +44,6 @@ $ composer test
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
-
-## Security
-
-If you discover any security related issues, please email :author_email instead of using the issue tracker.
 
 ## Credits
 
