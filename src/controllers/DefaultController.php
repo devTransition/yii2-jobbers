@@ -1,6 +1,6 @@
 <?php
 
-namespace devtransition\Jobbers\yii\controllers;
+namespace devtransition\jobbers\yii\controllers;
 
 use yii\web\Controller;
 

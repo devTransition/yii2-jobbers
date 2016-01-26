@@ -1,20 +1,19 @@
 <?php
 
-namespace devtransition\Jobbers\yii;
+namespace devtransition\jobbers\yii;
 
-use \Yii;
+use Yii;
 use yii\base\BootstrapInterface;
 
-class Module extends \yii\base\Module  implements BootstrapInterface
+class Module extends \yii\base\Module implements BootstrapInterface
 {
-    //public $controllerNamespace = 'devtransition\Jobbers\yii\controllers';
+    public $controllerNamespace = 'devtransition\Jobbers\yii\controllers';
 
     public function init()
     {
         parent::init();
 
-        // custom initialization code goes here
-        \Yii::setAlias("@devtransition", __DIR__);
+        #$this->aliases = ["@devtransition" => __DIR__];
     }
 
     /**
@@ -22,7 +21,6 @@ class Module extends \yii\base\Module  implements BootstrapInterface
      */
     public function bootstrap($app)
     {
-        asdfasf();
         if ($app instanceof \yii\web\Application) {
 
             $app->getUrlManager()->addRules([
@@ -32,11 +30,10 @@ class Module extends \yii\base\Module  implements BootstrapInterface
             ], false);
         } elseif ($app instanceof \yii\console\Application) {
             $app->controllerMap[$this->id] = [
-                'class' => 'devtransition\Jobbers\yii\console\DefaultControllerX',
+                'class' => 'devtransition\Jobbers\yii\console\DefaultController',
                 'module' => $this,
             ];
         }
 
     }
-
 }
