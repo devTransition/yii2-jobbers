@@ -6,7 +6,11 @@
         "yii2",
         "extension",
         "amqp",
-        "RabbitMQ"
+        "RabbitMQ",
+        "queue",
+        "sync",
+        "background",
+        "job"
     ],
     "homepage": "https://github.com/devTransition/yii2-jobbers",
     "license": "Apache-2.0",
